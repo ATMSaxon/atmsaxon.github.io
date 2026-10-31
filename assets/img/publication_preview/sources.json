@@ -1,0 +1,22 @@
+{
+  "u3dwind.jpg": {
+    "figure": "Figure 1, Shanghai urban wind field",
+    "source": "https://arxiv.org/html/2607.04495v1",
+    "image": "https://arxiv.org/html/2607.04495v1/fig_shanghai.jpg",
+    "credit": "Zhou et al., U3DWind, 2026"
+  },
+  "innovation-ecosystem.png": {
+    "figure": "Figure 1, Low-altitude economy ecosystem",
+    "source": "https://doi.org/10.1016/j.xinn.2026.101439",
+    "extracted_from": "User-provided publisher PDF, page 2, embedded image",
+    "credit": "Zhou, Xue, Jia and Chen, The Innovation 7(7), 101439 (2026)",
+    "license": "CC BY 4.0"
+  },
+  "lino-yolo.jpg": {
+    "figure": "Figure 1, YOLOv11 architecture with CA and DyT modules",
+    "source": "https://doi.org/10.1109/JSTARS.2025.3609658",
+    "extracted_from": "User-provided publisher PDF, page 3, original embedded image",
+    "credit": "Li et al., IEEE JSTARS, 18, 24491\u201324508 (2025)",
+    "license": "CC BY 4.0"
+  }
+}

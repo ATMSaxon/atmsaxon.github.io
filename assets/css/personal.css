@@ -1,0 +1,150 @@
+/* Personal visual styling; al-folio retains layout and responsive navigation. */
+:root {
+  --global-theme-color: #246582;
+  --personal-accent: #246582;
+  --personal-line: #dce6eb;
+  --personal-tint: #f3f7f9;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #85c7df;
+  --personal-accent: #85c7df;
+  --personal-line: #35454e;
+  --personal-tint: #242e34;
+}
+body {
+  background-image: radial-gradient(ellipse at 100% 0%, var(--personal-tint), transparent 52%);
+  background-attachment: fixed;
+}
+#navbar {
+  border-top: 3px solid var(--personal-accent);
+  border-bottom: 1px solid var(--personal-line);
+}
+#navbar .nav-link {
+  font-size: 0.92rem;
+}
+#navbar .nav-item.active > .nav-link {
+  color: var(--personal-accent);
+  font-weight: 600;
+}
+.post-header {
+  border-left: 4px solid var(--personal-accent);
+  padding-left: 1.15rem;
+  margin-bottom: 1.8rem;
+}
+.post-title {
+  letter-spacing: -0.035em;
+}
+.post-header .desc {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.2rem;
+}
+.post article h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--personal-line);
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.post article h3 {
+  color: var(--personal-accent);
+}
+.post .profile img {
+  border: 5px solid var(--global-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(25, 65, 85, 0.12);
+}
+.post .experience-row {
+  padding: 1.25rem 0.75rem;
+  border-bottom-color: var(--personal-line);
+  border-radius: 6px;
+  transition: background-color 0.18s ease;
+}
+.post .experience-row:hover {
+  background: var(--personal-tint);
+}
+.post .experience-heading h3 {
+  color: var(--global-text-color);
+}
+.post .experience-heading time {
+  padding: 0.18rem 0.6rem;
+  border-radius: 4px;
+  background: var(--personal-tint);
+  font-size: 0.8rem;
+}
+.post .experience-logo {
+  border: 1px solid var(--personal-line);
+}
+.publications .title {
+  font-weight: 600;
+}
+.publications .links .btn {
+  border-radius: 4px;
+  border-color: var(--personal-line);
+  color: var(--personal-accent);
+}
+.publications .links .btn:hover {
+  background: var(--personal-accent);
+  color: var(--global-bg-color);
+}
+.academic-section li::marker {
+  color: var(--personal-accent);
+}
+.social {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--personal-line);
+}
+footer {
+  border-top: 1px solid var(--personal-line);
+}
+@media (max-width: 576px) {
+  .post-header {
+    padding-left: 0.85rem;
+  }
+  .post article h2 {
+    font-size: 1.45rem;
+  }
+  .post .experience-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .post .experience-row {
+    transition: none;
+  }
+}
+
+.education-section {
+  clear: both;
+}
+#education-heading {
+  scroll-margin-top: 90px;
+}
+.education-entry {
+  padding: 1.1rem 0.75rem;
+  border-bottom: 1px solid var(--personal-line);
+}
+.education-entry:last-child {
+  border-bottom: 0;
+}
+.post .education-entry h3 {
+  color: var(--global-text-color);
+}
+.education-entry .experience-heading {
+  gap: 0.4rem 1rem;
+}
+@media (max-width: 576px) {
+  .education-entry {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.zhiqing-logo {
+  overflow: hidden;
+}
+.zhiqing-logo img {
+  transform: scale(1.65);
+}
